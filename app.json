@@ -1,0 +1,35 @@
+{
+  "id": "d01198fc-d667-4960-9af0-96529fc8f18a",
+  "name": "Galaga",
+  "publisher": "Default Publisher",
+  "version": "1.0.0.0",
+  "brief": "The Galaga arcade machine, emulated in AL.",
+  "description": "An emulator of the Namco Galaga arcade board (three Z80 CPUs, the Namco custom chips, video and sound) written in AL. It runs the original ROMs.",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "29.0.0.0",
+  "idRanges": [
+    {
+      "from": 66700,
+      "to": 66799
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "18.0",
+  "features": [
+    "NoImplicitWith"
+  ],
+  "resourceFolders": [
+    "ROMs"
+  ]
+}

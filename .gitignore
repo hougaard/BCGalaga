@@ -1,0 +1,32 @@
+# ---- AL / Business Central ----
+# Symbol packages downloaded by the AL extension (restore with "AL: Download symbols")
+.alpackages/
+# Compiled extension packages (built output, also embeds the ROMs as resources)
+*.app
+# Debugger snapshots
+.snapshots/
+# Compiler output / packaging artifacts
+*.rad
+.output/
+.buildartifacts/
+*.xlf.bak
+# AL Language Server caches
+.alcache/
+.altemplates/
+# Launch config is often user-specific; keep rad.json out, launch.json stays tracked
+.vscode/rad.json
+
+# ---- Copyrighted arcade ROMs (never commit) ----
+ROMs/
+# Generated browser-harness bundle that embeds the ROM bytes
+tools/test/browser/roms.gen.js
+# Other generated harness output
+tools/test/browser/machine.gen.js
+
+# ---- Tooling / OS noise ----
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+*.log
