@@ -9,13 +9,23 @@ M sound on/off, End cycles the upscaling filters, ` shows timings, I imports ROM
 
 ## ROMs
 
-The `ROMs` folder ships with the app as resources: the `galagao` program and graphics ROMs plus the four PROMs from
-`galaga.zip`. Files are matched by the chip location at the
-end of the name (`.3p`, `.3m`, `.2m`, `.2l` main CPU, `.3f` sub CPU, `.2c` sound CPU, `.4l` characters, `.4d` `.4f`
-sprites), so `galaga` (gg1_1b.3p ...) works too. The color PROMs (`prom-5.5n`, `prom-4.2n`, `prom-3.1c`) and the sound
-PROM (`prom-1.1d`) are in the parent set `galaga.zip`, not in the clone sets. Without them the colors are made up
-and the add-in uses its own waveforms. Import `galaga.zip` on page **Galaga ROM Files** (or drop the PROM files into
-`ROMs`) for the real colors and sound.
+The ROM files are copyrighted by Namco and are **not** included in this repository. You have to source them yourself:
+the `galagao` (or `galaga`) MAME romset plus the four PROMs from the parent set `galaga.zip`. There are two ways to
+get them into the app:
+
+- **Before building**: drop the files into the `ROMs` folder (git-ignored). `app.json` lists it as a resource folder,
+  so the compiled app carries the ROMs and the game works out of the box.
+- **After deploying**: import `galaga.zip` (or the individual files) on page **Galaga ROM Files**, or press I on
+  the Galaga page. Imported files take precedence over the app resources.
+
+Files are matched by the chip location at the end of the name (`.3p`, `.3m`, `.2m`, `.2l` main CPU, `.3f` sub CPU,
+`.2c` sound CPU, `.4l` characters, `.4d` `.4f` sprites), so both `galagao` (gg1-1.3p ...) and `galaga` (gg1_1b.3p ...)
+work. The color PROMs (`prom-5.5n`, `prom-4.2n`, `prom-3.1c`) and the sound PROM (`prom-1.1d`) are only in the
+parent set `galaga.zip`, not in the clone sets. Without them the colors are made up and the add-in uses its own
+waveforms.
+
+The browser test harness (`tools/test/browser/make.js`) reads the same `ROMs` folder and generates `roms.gen.js`,
+which is git-ignored as well.
 
 ## Objects
 
