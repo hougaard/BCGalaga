@@ -9,7 +9,8 @@ M sound on/off, End cycles the upscaling filters, ` shows timings, I imports ROM
 
 ## ROMs
 
-The `ROMs` folder ships with the app as resources (the `galagao` set). Files are matched by the chip location at the
+The `ROMs` folder ships with the app as resources: the `galagao` program and graphics ROMs plus the four PROMs from
+`galaga.zip`. Files are matched by the chip location at the
 end of the name (`.3p`, `.3m`, `.2m`, `.2l` main CPU, `.3f` sub CPU, `.2c` sound CPU, `.4l` characters, `.4d` `.4f`
 sprites), so `galaga` (gg1_1b.3p ...) works too. The color PROMs (`prom-5.5n`, `prom-4.2n`, `prom-3.1c`) and the sound
 PROM (`prom-1.1d`) are in the parent set `galaga.zip`, not in the clone sets. Without them the colors are made up

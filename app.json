@@ -1,7 +1,7 @@
 {
   "id": "d01198fc-d667-4960-9af0-96529fc8f18a",
   "name": "Galaga",
-  "publisher": "Default Publisher",
+  "publisher": "Hougaard.com",
   "version": "1.0.0.0",
   "brief": "The Galaga arcade machine, emulated in AL.",
   "description": "An emulator of the Namco Galaga arcade board (three Z80 CPUs, the Namco custom chips, video and sound) written in AL. It runs the original ROMs.",
